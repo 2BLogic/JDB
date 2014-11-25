@@ -6,11 +6,23 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.provider.ContactsContract.Contacts;
 import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
+
+/*import com.google.gdata.client.*;
+import com.google.gdata.client.contacts.*;
+import com.google.gdata.data.*;
+import com.google.gdata.data.contacts.*;
+import com.google.gdata.data.extensions.*;
+import com.google.gdata.util.*;*/
+import java.io.IOException;
+import java.net.URL;
+
+
 
 public class MainActivity extends Activity {
 
@@ -33,8 +45,7 @@ public class MainActivity extends Activity {
 		text = ("Nombre d'evenement au Journal : " + String.valueOf(MainActivity.jdb.size()));
 		toast = Toast.makeText(context, text, 1);
 		toast.setGravity(Gravity.TOP, 0, 15);
-		toast.show();
-        
+		toast.show();       
 	}
 	
 	/**
@@ -113,7 +124,7 @@ public class MainActivity extends Activity {
 		 *  Type 3 = Comment Or Note Event
 		 *  Type 4 = other
 		 * 
-		 
+		 * 		 
 		evenementJournal ejPunchedIN;
 		evenementJournal ejPunchedOut;
 		ejPunchedIN = jdb.findLastEvent(1);
@@ -124,13 +135,12 @@ public class MainActivity extends Activity {
 		long l_ejPI = Long.parseLong(ejPunchedIN.Data);
 		long l_ejPO = Long.parseLong(ejPunchedOut.Data);
 		
-		if (l_ejPI >= l_ejPO) {
-			return true;
-		}
+			if (l_ejPI >= l_ejPO) {
+				return true;
+			}
 		}
 		//Les valeures sont nulls ou punchIn < punchOut
-		return false;
-		
+		return false;		
 	}
     */
 	
@@ -152,4 +162,10 @@ public class MainActivity extends Activity {
 		}
 		return super.onOptionsItemSelected(item);
 	}
+	
+    public void ContactsActivity(View view){
+    	System.out.println("bouton pese");
+    	Intent intent = new Intent(this, ContactsActivity.class);
+    	startActivity(intent);
+    }
 }

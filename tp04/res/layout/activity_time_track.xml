@@ -26,14 +26,6 @@
         android:onClick="PunchOut"
         android:text="@string/bt_po" />
 
-    <AnalogClock
-        android:id="@+id/analogClock1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="66dp" />
-
     <DigitalClock
         android:id="@+id/digitalClock1"
         android:layout_width="wrap_content"
@@ -51,5 +43,12 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="57dp"
         android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <AnalogClock
+        android:id="@+id/analogClock1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/digitalClock1"
+        android:layout_centerHorizontal="true" />
   
 </RelativeLayout>
