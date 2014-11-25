@@ -32,8 +32,7 @@ public class ReadLogActivity extends Activity {
 			}
 			listDesEvenements.add(event);
 			lv.setAdapter(new ArrayAdapter<evenementJournal>(this, android.R.layout.simple_list_item_1, listDesEvenements));
-		}
-		
+		}	
 	}
 
 	@Override

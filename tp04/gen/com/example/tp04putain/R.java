@@ -26,16 +26,17 @@ public final class R {
     }
     public static final class id {
         public static final int PIbuttonl=0x7f080000;
-        public static final int PObuttonL=0x7f080004;
-        public static final int action_settings=0x7f08000a;
-        public static final int analogClock1=0x7f080005;
+        public static final int PObuttonL=0x7f080005;
+        public static final int action_settings=0x7f08000b;
+        public static final int analogClock1=0x7f080008;
+        public static final int button1=0x7f080003;
         public static final int button3=0x7f080002;
         public static final int digitalClock1=0x7f080006;
-        public static final int rl_lv=0x7f080003;
+        public static final int rl_lv=0x7f080004;
         public static final int textInOuOut=0x7f080007;
         public static final int wl_bt_cancel=0x7f080001;
-        public static final int wl_bt_save=0x7f080008;
-        public static final int wl_tb_text=0x7f080009;
+        public static final int wl_bt_save=0x7f080009;
+        public static final int wl_tb_text=0x7f08000a;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
